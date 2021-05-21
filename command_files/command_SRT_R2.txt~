@@ -1,0 +1,4 @@
+for n in `seq 0 7`; do echo "mkdir DM_${n}; cd DM_${n}; python ~/FRB_PRECISE_analysis/dedisp.py $1_ch70-600.fil $((50+(22 * ${n}))) 0.1 1 220; cd .."; done
+for n in `seq 8 9`; do echo "mkdir DM_${n}; cd DM_${n}; python ~/FRB_PRECISE_analysis/dedisp.py $1_ch70-600.fil $((226+(64 * ${n-8}))) 0.3 2 214; cd .."; done
+
+ 
